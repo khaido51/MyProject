@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Count Down Timer</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="css/style.css" />
+        </style>
+    </head>
+    <body>
+        <div>
+           <strong>
+                Create Your Own Agenda<br/>
+            </strong>
+			<form id="userForm">
+					<div id="myDIV" class="header">
+						<h2>My Agenda</h2>
+							<input type="text" id="myInput" placeholder="Title...">
+								<span onclick="newElement()" class="addBtn">Add</span>
+					</div>
+
+					<ul id="myUL">
+			
+					</ul>
+			</form>
+			
+		</div>
+
+			<div id="myTimer">
+				<h3>Please enter the valid time</h3>
+            <input type="text" id="hour_val" placeholder="Hours" value=""/> <br/>
+            <input type="text" id="minute_val" placeholder="Minutes" value=""/> <br/>
+            <input type="text" id="second_val" placeholder="Seconds" value=""/>
+            <input type="button" value="Start" onclick="start()"/>
+            <input type="button" value="Stop" onclick="stop()"/>  <br/> <br/>
+        </div>
+        
+
+		
+		
+        <div id="clock">
+			<h3>Clock</h3>
+			<span id="agenda"><Event></span>:
+            <span id="hour">Hours</span> :
+            <span id="minute">Minutes</span> :
+            <span id="second">Seconds</span>
+        </div>
+		<script src="js/script1.js"></script>
+    </body>
+</html>
